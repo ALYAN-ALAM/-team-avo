@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navigation"></div>
+<!-- <header>
+    
+    <div class="container">
+        <h1>Upcoming Events</h1>
+    </div>
+</header> -->
+
+<main class="container">
+    <section class="events-container">
+        <h1>Upcoming Events</h1>
+        <h2>Ongoing Events</h2>
+        <section class="event">
+            <div class="event-image">
+                <img src="event1.jpg" alt="Event 1">
+            </div>
+            <div class="event-details">
+                <h3>Event Title 1</h3>
+                <p>Date: October 10, 2024</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+                <p>Location: Venue Name, City</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat urna eget turpis sodales, ac malesuada nulla convallis.</p>
+                <a href="#" class="btn">Register</a>
+            </div>
+            <div class="event-details">
+                <h3>Event Title 1</h3>
+                <p>Date: October 10, 2024</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+                <p>Location: Venue Name, City</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat urna eget turpis sodales, ac malesuada nulla convallis.</p>
+                <a href="#" class="btn">Register</a>
+            </div>
+            <div class="event-details">
+                <h3>Event Title 1</h3>
+                <p>Date: October 10, 2024</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+                <p>Location: Venue Name, City</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat urna eget turpis sodales, ac malesuada nulla convallis.</p>
+                <a href="#" class="btn">Register</a>
+            </div>
+        </section>
+        <!-- Add more ongoing events here -->
+    </section>
+
+    <section class="events-containers">
+        <h2>Past Events</h2>
+        <section class="event">
+            <div class="event-image">
+                <img src="event3.jpg" alt="Event 3">
+            </div>
+            <div class="event-details">
+                <h3>Event Title 3</h3>
+                <p>Date: June 20, 2023</p>
+                <p>Time: 10:00 AM - 4:00 PM</p>
+                <p>Location: Venue Name, City</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat urna eget turpis sodales, ac malesuada nulla convallis.</p>
+                <a href="#" class="btn disabled">Past Event</a>
+            </div>
+            <div class="event-details">
+                <h3>Event Title 3</h3>
+                <p>Date: June 20, 2023</p>
+                <p>Time: 10:00 AM - 4:00 PM</p>
+                <p>Location: Venue Name, City</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat urna eget turpis sodales, ac malesuada nulla convallis.</p>
+                <a href="#" class="btn disabled">Past Event</a>
+            </div>
+            
+        </section>
+        <!-- Add more past events here -->
+    </section>
+</main>
+
+<div id="navigate"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigate").innerHTML = data;
+            });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigation").innerHTML = data;
+            });
+    });
+</script>
+
+</body>
+</html>

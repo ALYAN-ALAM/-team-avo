@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navigation"></div>
+<!-- <header>
+    <div class="container">
+        <h1>About Us</h1>
+    </div>
+</header> -->
+
+<main class="container">
+    <div class="intro">
+        <h1>About us:</h1>
+        <p>At eziStartup, our fervent commitment lies in igniting the flames of innovation and entrepreneurship across Pakistan. Our primary mission is to serve as a cornerstone for aspiring entrepreneurs and startups, enabling them to seamlessly translate their visionary ideas into thriving businesses. With a dedicated focus on fostering growth and cultivating potential, we stand as a beacon of empowerment within the entrepreneurial landscape of Pakistan.
+
+            Through a multifaceted approach, we offer a comprehensive suite of resources and support systems tailored to meet the dynamic needs of budding entrepreneurs.
+            
+            From providing invaluable mentorship and guidance to facilitating access to essential tools and resources, we strive to equip startups with the necessary arsenal to navigate the complexities of the business world.
+            
+            At the heart of our ethos lies a profound belief in the transformative power of entrepreneurship. </p>
+    </div>
+
+    <div class="features">
+        <h2>Features:</h2>
+        <div class="feature">
+            <h3>Expert Guidance:</h3>
+            <p>Our experienced mentors provide expert guidance and support to help startups navigate the challenges of entrepreneurship.</p>
+        </div>
+        <div class="feature">
+            <h3>Networking Opportunities:</h3>
+            <p>We offer networking events and workshops where entrepreneurs can connect with industry experts, investors, and like-minded individuals.</p>
+        </div>
+        <div class="feature">
+            <h3>Funding Opportunities:</h3>
+            <p>At eziStartup, we understand that access to capital is vital for the growth and sustainability of startups. That's why we provide entrepreneurs with access to a network of investors and funding opportunities.</p>
+        </div>
+        <div class="feature">
+            <h3>Market Research and Analysis:</h3>
+            <p>In today's competitive landscape, understanding market dynamics and consumer behavior is crucial for success. eziStartup offers comprehensive market research and analysis services to help startups identify market trends. </p>
+        </div>
+        <div class="feature">
+            <h3>Incubation and Acceleration Programs:</h3>
+            <p>As part of our commitment to nurturing talent and fostering innovation, eziStartup offers incubation and acceleration programs designed to support startups at every stage of their journey. Our incubation programs provide early-stage startups with the resources. </p>
+        </div>
+    </div>
+
+    <div class="team-members">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="images/alyan.webp" alt="Alyan">
+            <h3>Alyan</h3>
+            <p>Backend Developer</p>
+            <p>
+                Meet our backend developer, the mastermind behind the scenes, ensuring our platform operates seamlessly and efficiently, providing users with a smooth experience from start to finish.</p>
+        </div>
+        <div class="team-member">
+            <img src="images/WhatsApp Image 2024-03-10 at 13.34.04_125943c2.jpg" alt="Team Member 2">
+            <h3>Rafiea Ashraf</h3>
+            <p>frontend developer</p>
+            <p>
+                Introducing our frontend developer, the creative genius crafting seamless user experiences and captivating interfaces for our platform.</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member4.jpg" alt="Sara Ali">
+            <h3>Zulfiqar </h3>
+            <p>Backend Developer</p>
+            <p>Meet our backend developer, the mastermind behind the scenes, ensuring our platform operates seamlessly and efficiently, providing users with a smooth experience from start to finish.</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member4.jpg" alt="Sara Ali">
+            <h3>Akmal Khan</h3>
+            <p>frontend developer</p>
+            <p>Introducing our frontend developer, the creative genius crafting seamless user experiences and captivating interfaces for our platform.</p>
+        </div>
+    </div>
+</main>
+
+<div id="navigate"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigate").innerHTML = data;
+            });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigation").innerHTML = data;
+            });
+    });
+</script>
+
+</body>
+</html>

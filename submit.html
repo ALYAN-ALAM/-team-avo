@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Idea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navigation"></div>
+    
+    <div class="submit-idea-container">
+        <h2>Submit Your Idea</h2>
+        <form>
+            <div class="form-group">
+                <label for="idea-name">Idea Name:</label>
+                <input type="text" id="idea-name" name="idea-name" placeholder="Enter your idea name" required>
+            </div>
+            <div class="form-group">
+                <label for="idea-description">Idea Description:</label>
+                <textarea id="idea-description" name="idea-description" placeholder="Briefly describe your idea" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="idea-category">Idea Category:</label>
+                <select id="idea-category" name="idea-category" required>
+                    <option value="" disabled selected>Select your idea category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Education">Education</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="video-link">Video Presentation Link:</label>
+                <input type="url" id="video-link" name="video-link" placeholder="Enter link to your video presentation">
+            </div>
+            <div class="form-group">
+                <label for="ppt-file">Upload PowerPoint File:</label>
+                <input type="file" id="ppt-file" name="ppt-file" accept=".ppt, .pptx">
+            </div>
+            <button type="submit">Submit Idea</button>
+        </form>
+    </div>
+    <div id="navigate"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigate").innerHTML = data;
+            });
+    });
+</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navigation").innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
