@@ -36,7 +36,10 @@ module.exports = {
   },
   getUserbyid: async (user_id) => {
     try {
+      // console.log(user_id);
+
       const response = await userModel.getUserById(user_id);
+      // console.log(response.token);
       if (response) {
         return response;
       }

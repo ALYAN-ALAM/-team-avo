@@ -6,6 +6,9 @@ var logger = require("morgan");
 require("dotenv").config();
 
 var userAuthentication = require("./routes/authenticationRoutes");
+var userRoutes = require("./routes/userRoutes");
+var ideasRoutes = require("./routes/ideasRoute");
+
 var app = express();
 
 // view engine setup
@@ -20,6 +23,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // app.use("/", userAuthentication);
 app.use("/userauth", userAuthentication);
+app.use("/user", userRoutes);
+app.use("/idea", ideasRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
