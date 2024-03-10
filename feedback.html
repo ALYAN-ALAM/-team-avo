@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navigation"></div>
+    
+<!-- <header>
+    <h1>Feedback</h1>
+</header> -->
+
+<main class="container">
+    <section class="feedback-section">
+        <h2>Past Feedback</h2>
+        <div class="feedback-container">
+            <div class="feedback">
+                <div class="feedback-avatar">
+                    <img src="avatar1.jpg" alt="Feedback Avatar">
+                </div>
+                <p class="feedback-text">"Great experience! Highly recommend."</p>
+                <p class="feedback-author">- Ali Khan</p>
+            </div>
+            <div class="feedback">
+                <div class="feedback-avatar">
+                    <img src="avatar2.jpg" alt="Feedback Avatar">
+                </div>
+                <p class="feedback-text">"Excellent service and quick response."</p>
+                <p class="feedback-author">- Fatima Ahmed</p>
+            </div>
+            <div class="feedback">
+                <div class="feedback-avatar">
+                    <img src="avatar3.jpg" alt="Feedback Avatar">
+                </div>
+                <p class="feedback-text">"Impressive work! Will definitely use again."</p>
+                <p class="feedback-author">- Ahmed Khan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="give-feedback-section">
+        <h2>Give Us Feedback</h2>
+        <form action="#" id="give-feedback">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+</main>
+
+<div id="navigate"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigation").innerHTML = data;
+            });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navigate").innerHTML = data;
+            });
+    });
+</script>
+</body>
+</html>
