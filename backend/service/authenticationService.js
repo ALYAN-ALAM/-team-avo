@@ -67,7 +67,7 @@ module.exports = {
           }
           return existingUser;
         } else {
-          return "Password incorrect";
+          return "Password or Email incorrect";
         }
       } else {
         return "Signup first";
