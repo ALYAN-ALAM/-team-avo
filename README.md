@@ -152,5 +152,6 @@ Rafiea Ashraf: Built the frontend using HTML, CSS, PHP, and JavaScript, bringing
 Azhan Khan: Wrote the technical documentation..
 
 Juli Kalna: Contributed ideas and research that helped shape our project's direction.
-
+ 
+[Hackthon Page - Submission ](https://devpost.com/software/ezistartup)
 
